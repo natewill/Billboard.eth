@@ -44,7 +44,7 @@ class App extends React.Component {
 
   async handleSubmit(event){
     event.preventDefault();
-    if(event.target.price.value == 0){
+    if(event.target.price.value === 0){
         this.setState({
             isError: true
         })
